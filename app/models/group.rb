@@ -5,4 +5,5 @@ class Group < ApplicationRecord
 
   has_many :group_relationships
   has_many :member, through: :group_relationships, source: :user
+  
 end
